@@ -4,7 +4,7 @@ function getArrayList() {
     if (arrStr === null) {
         return []
     } else {
-        return arrStr;
+        return JSON.parse(arrStr);
     }
 }
 
@@ -12,7 +12,7 @@ function getArrayList() {
 function saveData(inp) {
     const arr = getArrayList();
     arr.push(inp)
-    localStorage.setItem('dataSave', arr);
+    localStorage.setItem('dataSave', JSON.stringify(arr));
 }
 
 

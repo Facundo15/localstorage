@@ -4,7 +4,7 @@ function getArrayList() {
     if (arrStr === null) {
         return []
     } else {
-        return arrStr;
+        return JSON.parse(arrStr);
     }
 }
 
